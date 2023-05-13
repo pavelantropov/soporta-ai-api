@@ -1,6 +1,6 @@
 ﻿using static System.String;
 
-namespace SoportaAI.Domain.Options;
+namespace SoportaAI.Configuration.Options;
 
 public class OpenAiOptions
 {

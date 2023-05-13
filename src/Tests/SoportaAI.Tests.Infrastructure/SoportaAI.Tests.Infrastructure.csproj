@@ -18,7 +18,6 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <ProjectReference Include="..\..\SoportaAI.Domain\SoportaAI.Domain.csproj" />
 	  <ProjectReference Include="..\..\SoportaAI.Infrastructure\SoportaAI.Infrastructure.csproj" />
 	</ItemGroup>
 

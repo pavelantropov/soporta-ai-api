@@ -6,11 +6,11 @@
 	</PropertyGroup>
 
 	<ItemGroup>
-	  <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="12.0.1" />
+	  <PackageReference Include="Microsoft.Extensions.Configuration" Version="7.0.0" />
 	</ItemGroup>
 
 	<ItemGroup>
-	  <ProjectReference Include="..\SoportaAI.Infrastructure\SoportaAI.Infrastructure.csproj" />
+	  <ProjectReference Include="..\SoportaAI.Utils\SoportaAI.Utils.csproj" />
 	</ItemGroup>
 
 </Project>
