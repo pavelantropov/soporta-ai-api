@@ -6,19 +6,19 @@ namespace SoportaAI.Tests.Infrastructure;
 
 public class OpenAiApiServiceTests
 {
-	private OpenAiApiService _apiService;
+	private OpenAiService _aiService;
 
 	[SetUp]
 	public void Setup()
 	{
 		// TODO use moq
-		_apiService = new OpenAiApiService(new OpenAIAPI(), new MessageService(new MessageFactory()));
+		_aiService = new OpenAiService(new OpenAIAPI(), new MessageService(new MessageFactory()));
 	}
 
 	[TestCase("Hello! Are you a chat bot?")]
 	public async Task GenerateResponseTestAsync(string input)
 	{
-		var response = await _apiService.GenerateResponseAsync(input);
+		var response = await _aiService.GenerateResponseAsync(input);
 
 		Assert.That(response, Is.Not.Null);
 		Assert.That(response, Is.Not.Empty);

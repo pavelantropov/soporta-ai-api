@@ -4,14 +4,14 @@ using SoportaAI.Domain.Entities;
 
 namespace SoportaAI.Infrastructure.Services;
 
-public class OpenAiApiService : IApiService
+public class OpenAiService : IAiService
 {
 	private readonly IOpenAIAPI _api;
 	private readonly IMessageService _messageService;
 
 	private readonly Conversation _chat;
 
-    public OpenAiApiService(IOpenAIAPI api, IMessageService messageService)
+    public OpenAiService(IOpenAIAPI api, IMessageService messageService)
 	{
 		_api = api;
 		_messageService = messageService;

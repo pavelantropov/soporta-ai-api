@@ -2,7 +2,7 @@
 
 namespace SoportaAI.Infrastructure.Services;
 
-public interface IApiService
+public interface IAiService
 {
 	Task<Message> GenerateResponseAsync(string input, CancellationToken cancellationToken = default);
 }
