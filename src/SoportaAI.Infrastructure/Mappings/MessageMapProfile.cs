@@ -1,6 +1,6 @@
 ﻿using AutoMapper;
+using SoportaAI.Api.Model.Models;
 using SoportaAI.Domain.Entities;
-using SoportaAI.Model.Models;
 
 namespace SoportaAI.Infrastructure.Mappings;
 

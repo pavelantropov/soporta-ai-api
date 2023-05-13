@@ -11,7 +11,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SoportaAI.Utils", "src\Sopo
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SoportaAI.Domain", "src\SoportaAI.Domain\SoportaAI.Domain.csproj", "{FE921B0F-A9AF-4321-BA9B-190E60F32114}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SoportaAI.Model", "src\SoportaAI.Model\SoportaAI.Model.csproj", "{2D1958A2-9247-4CC5-BDA0-6CC6F5D62854}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SoportaAI.Api.Model", "src\SoportaAI.Model\SoportaAI.Api.Model.csproj", "{2D1958A2-9247-4CC5-BDA0-6CC6F5D62854}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SoportaAI.Infrastructure", "src\SoportaAI.Infrastructure\SoportaAI.Infrastructure.csproj", "{300D9008-2297-4142-93C8-BEFA2EF49D7D}"
 EndProject

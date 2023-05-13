@@ -1,4 +1,4 @@
-﻿namespace SoportaAI.Model.Models;
+﻿namespace SoportaAI.Api.Model.Models;
 
 public class UserModel
 {
