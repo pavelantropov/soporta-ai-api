@@ -15,7 +15,7 @@ public static class ServiceCollectionExtensions
 
 		services.AddSingleton<IOpenAIAPI, OpenAIAPI>(_ =>
 			new OpenAIAPI(new APIAuthentication(openAiOptions.ApiKey, openAiOptions.Organization)));
-		services.AddSingleton<IAiService, OpenAiService>();
+		services.AddScoped<IAiService, OpenAiService>();
 
 		services.AddSingleton<IMessageFactory, MessageFactory>();
 		services.AddSingleton<IMessageService, MessageService>();

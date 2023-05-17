@@ -1,7 +1,7 @@
 ﻿using OpenAI_API;
 using OpenAI_API.Chat;
 using SoportaAI.Domain.Entities;
-using Models = OpenAI_API.Models.Model;
+using AiModel = OpenAI_API.Models.Model;
 
 namespace SoportaAI.Infrastructure.Services;
 
@@ -18,15 +18,16 @@ public class OpenAiService : IAiService
 		_messageService = messageService;
 
 		_chat = _api.Chat.CreateConversation();
-		//_chat.Model = Models.GPT4;
 	}
 
-	public async Task<Message> GenerateResponseAsync(string input, CancellationToken cancellationToken = default)
+	public async Task<Message> GenerateResponseAsync(string input, AiModel model, CancellationToken cancellationToken = default)
 	{
 		if (string.IsNullOrWhiteSpace(input))
 		{
 			return default; // !!!
 		}
+
+		_chat.Model = model;
 
 		_chat.AppendUserInput(input);
 
